@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0891b2;
+  --color-primary-dark: #0e7490;
+
+  --color-bg-dark: #0f172a;
+  --color-bg-light: #f8fafc;
+  --color-white: #ffffff;
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+
+  --font-heading: "Merriweather", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply font-body text-text-secondary bg-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading text-text-primary;
+  }
+
+  .container {
+    @apply mx-auto;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-4 py-2 rounded-full font-medium transition cursor-pointer;
+  }
+
+  .btn--primary {
+    @apply bg-primary text-white hover:bg-primary-dark;
+  }
+}
