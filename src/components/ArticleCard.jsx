@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { Search, X, CalendarDays, User, Fish } from "lucide-react";
+import { X, CalendarDays, User, Fish } from "lucide-react";
 import articles from "../data/articles.json";
+import SearchBar from "./SearchBar";
 
 const ArticleCard = () => {
   const [search, setSearch] = useState("");
@@ -35,24 +36,12 @@ const ArticleCard = () => {
             </div>
 
             {/* right: search */}
-            <div className="relative w-full md:w-64">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted w-5 h-5" />
-              <input
-                type="text"
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search stories..."
-                className="w-full pl-10 pr-12 py-2 border border-text-muted rounded-full focus:outline-none focus:border-primary"
-              />
-              {search && (
-                <button
-                  onClick={clearSearch}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-text-muted hover:text-primary"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              )}
-            </div>
+            <SearchBar
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              onClear={clearSearch}
+              placeholder="Search stories..."
+            />
           </div>
 
           {search.trim() && (
