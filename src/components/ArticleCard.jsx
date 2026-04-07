@@ -20,7 +20,7 @@ const ArticleCard = () => {
   });
 
   return (
-    <section className="py-12">
+    <section className="py-12 bg-bg-light">
       <div className="container">
         <div className="wrapper flex flex-col gap-2">
           <div className=" flex flex-col md:flex-row md:items-end md:justify-between gap-6">
