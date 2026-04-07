@@ -18,7 +18,6 @@ const Conservation = () => {
     <section className="bg-slate-100 py-20">
       <div className="container">
         <div className="wrapper">
-          {/* Section header */}
           <div className="mb-8 flex items-center gap-4">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-green-200 shadow-sm">
               <Waves size={24} className="text-green-700" />
@@ -33,14 +32,12 @@ const Conservation = () => {
             </div>
           </div>
 
-          {/* Cards container */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
             {cards.map((card, i) => (
               <div
                 key={i}
                 className="flex overflow-hidden rounded-2xl border border-slate-200 bg-slate-50 shadow-sm"
               >
-                {/* Image - left */}
                 <div className="w-32 shrink-0 sm:w-40 md:w-48">
                   <img
                     src={card.image}
@@ -49,7 +46,6 @@ const Conservation = () => {
                   />
                 </div>
 
-                {/* Text - right */}
                 <div className="flex flex-1 flex-col justify-center gap-2 px-4 py-4 md:px-6">
                   <div className="flex flex-wrap items-center gap-3 text-[12px] text-text-muted">
                     <span className="flex items-center gap-1">

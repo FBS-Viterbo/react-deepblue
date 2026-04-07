@@ -25,7 +25,6 @@ const ArticleCard = () => {
       <div className="container">
         <div className="wrapper flex flex-col gap-2">
           <div className=" flex flex-col md:flex-row md:items-end md:justify-between gap-6">
-            {/* left: heading */}
             <div className="flex flex-col gap-2">
               <h2 className="text-3xl md:text-4xl font-heading text-text-primary">
                 Latest Stories
@@ -35,7 +34,6 @@ const ArticleCard = () => {
               </p>
             </div>
 
-            {/* right: search */}
             <SearchBar
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -51,16 +49,13 @@ const ArticleCard = () => {
             </p>
           )}
 
-          {/* cards and results content */}
           <div className="mt-10">
-            {/* cards container max col = 3 then add rows accordingly, like flex box or use grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 items-center justify-center gap-6 cursor-pointer">
               {filteredArticles.map((article) => (
                 <div
                   key={`${article.title}-${article.date}`}
                   className="group w-[340px] bg-white border border-slate-200 mx-auto h-[420px] rounded-xl overflow-hidden font-body transition-all duration-300 hover:border-primary"
                 >
-                  {/* Image + Badge */}
                   <div className="relative">
                     <img
                       src={article.image}
@@ -72,9 +67,7 @@ const ArticleCard = () => {
                     </span>
                   </div>
 
-                  {/* Content */}
                   <div className="px-[18px] pt-4 pb-5">
-                    {/* Meta */}
                     <div className="flex items-center gap-3.5 text-text-muted text-[12.5px] mb-2.5">
                       <span className="flex items-center gap-1.5">
                         <CalendarDays size={13} />
@@ -86,22 +79,19 @@ const ArticleCard = () => {
                       </span>
                     </div>
 
-                    {/* Title */}
                     <h2 className="font-heading font-bold text-[17px] leading-snug text-text-primary mb-2.5 transition-colors duration-300 group-hover:text-primary">
                       {article.title}
                     </h2>
 
-                    {/* Description */}
                     <p className="text-[13.5px] text-text-secondary leading-relaxed mb-3.5">
                       {article.excerpt}
                     </p>
 
-                    {/* Link */}
                     <a
                       href="#"
                       className="text-[13.5px] font-medium text-primary hover:text-primary-dark transition-colors"
                     >
-                      Read Story →
+                      Read Story -&gt;
                     </a>
                   </div>
                 </div>
@@ -120,9 +110,9 @@ const ArticleCard = () => {
               </h3>
 
               <p className="max-w-md text-text-muted leading-relaxed">
-                We couldn't find any articles matching "{search}". Try searching
-                for a different title or author, or clear your search to see all
-                stories.
+                We couldn&apos;t find any articles matching "{search}". Try
+                searching for a different title or author, or clear your search
+                to see all stories.
               </p>
 
               <button

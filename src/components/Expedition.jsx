@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 import articles from "../data/articles.json";
 
 const expeditionsArticles = articles.filter(
-  (article) => article.category === "Expeditions",
+  (article) => article.category === "Expeditions"
 );
 
 const Expedition = () => {
@@ -31,19 +31,15 @@ const Expedition = () => {
               className="group relative cursor-pointer overflow-hidden rounded-2xl"
               style={{ aspectRatio: "16/10" }}
             >
-              {/* Full-bleed image */}
               <img
                 src={article.image}
                 alt={article.title}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
-              {/* Dark gradient overlay — stronger at bottom */}
               <div className="absolute inset-0 bg-gradient-to-t from-slate-900/95 via-slate-900/30 to-transparent" />
 
-              {/* Content pinned to bottom */}
               <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                {/* Date + Author row */}
                 <div className="mb-2 flex items-center gap-4 text-xs text-slate-300">
                   <span className="flex items-center gap-1.5">
                     <Calendar className="h-3.5 w-3.5" />
@@ -57,12 +53,10 @@ const Expedition = () => {
                   )}
                 </div>
 
-                {/* Title */}
                 <h3 className="mb-2 font-serif text-lg font-bold text-white transition-colors group-hover:text-cyan-300 sm:text-xl md:text-2xl leading-snug">
                   {article.title}
                 </h3>
 
-                {/* Excerpt */}
                 <p className="line-clamp-2 text-sm text-slate-300 leading-relaxed">
                   {article.excerpt}
                 </p>

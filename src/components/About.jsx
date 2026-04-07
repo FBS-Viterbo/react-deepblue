@@ -7,9 +7,7 @@ const About = () => {
     <section id="about" className="bg-white py-14 md:py-20">
       <div className="container">
         <div className="wrapper">
-          {/* top text */}
           <div className="mx-auto mb-12 flex max-w-3xl flex-col items-center text-center">
-            {/* wave from lucide */}
             <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-primary">
               <Waves className="h-7 w-7 text-white" />
             </div>
@@ -25,14 +23,12 @@ const About = () => {
             </p>
           </div>
 
-          {/* bottom flex between three flex row, flex-col on small screens gap 2 */}
           <div className="flex flex-col gap-4 sm:flex-row sm:justify-between sm:gap-6">
             {stats.map((stat) => (
               <div
                 key={stat.label}
                 className="flex flex-1 flex-col items-center justify-center"
               >
-                {/* h4 color primary */}
                 <h4 className="font-heading text-4xl font-bold text-primary md:text-5xl">
                   {stat.value}
                 </h4>

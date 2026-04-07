@@ -36,7 +36,7 @@ const NewsletterSignup = () => {
           />
           <button
             onClick={handleSubscribe}
-            className="w-full rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-100 active:scale-95"
+            className="w-full md:w-fit rounded-full bg-white px-7 py-3 text-sm font-semibold text-slate-800 transition hover:bg-slate-100 active:scale-95"
           >
             Subscribe
           </button>

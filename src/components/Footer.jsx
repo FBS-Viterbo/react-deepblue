@@ -20,10 +20,8 @@ const Footer = () => {
 
   return (
     <footer className="bg-bg-dark border-t border-slate-800">
-      {/* Main footer content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
-          {/* Brand column */}
           <div className="md:col-span-1">
             <a href="#" className="flex items-center gap-2.5 mb-4">
               <div className="flex h-9 w-9 items-center justify-center rounded-full bg-cyan-500">
@@ -39,7 +37,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Explore links */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
               Explore
@@ -58,7 +55,6 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Connect links */}
           <div>
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-wider text-white">
               Connect
@@ -79,11 +75,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom bar */}
       <div className="border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col items-center gap-2 sm:flex-row sm:justify-between">
           <p className="text-xs text-slate-500">
-            © {currentYear} DeepBlue Blog. All rights reserved.
+            &copy; {currentYear} DeepBlue Blog. All rights reserved.
           </p>
           <p className="flex items-center gap-1 text-xs text-slate-500">
             Made with{" "}
