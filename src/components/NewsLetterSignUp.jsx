@@ -13,22 +13,18 @@ const NewsletterSignup = () => {
       id="newsletter"
       className="relative overflow-hidden bg-primary-dark py-20 md:py-28"
     >
-      {/* Subtle radial highlight top-left, matching the image */}
       <div className="pointer-events-none absolute inset-0" />
 
       <div className="relative z-10 mx-auto max-w-2xl px-4 text-center sm:px-6">
-        {/* Heading */}
         <h2 className="mb-4 font-serif text-4xl font-bold text-white sm:text-5xl">
           Dive Deeper
         </h2>
 
-        {/* Subtext */}
         <p className="mb-8 text-base leading-relaxed text-white sm:text-lg">
           Join 15,000+ ocean enthusiasts. Get the latest marine biology
           discoveries and conservation news delivered to your inbox weekly.
         </p>
 
-        {/* Input + Button row */}
         <div className="flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <input
             type="email"
@@ -46,7 +42,6 @@ const NewsletterSignup = () => {
           </button>
         </div>
 
-        {/* No spam note */}
         <p className="mt-4 text-xs text-cyan-400">
           No spam, ever. Unsubscribe anytime.
         </p>
