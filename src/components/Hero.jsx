@@ -1,7 +1,7 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
 
-const Banner = () => {
+const Hero = () => {
   return (
     <section className="bg-bg-dark text-white py-25">
       <div className="container">
@@ -41,4 +41,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Hero;

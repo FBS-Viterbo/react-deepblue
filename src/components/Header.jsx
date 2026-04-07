@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <header className="bg-white relative z-50">
-      <div className="container mx-auto">
+      <div className="container">
         <div className="wrapper flex items-center justify-between py-4">
           {/* left */}
           <div className="flex items-center gap-2">

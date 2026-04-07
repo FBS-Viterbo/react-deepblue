@@ -1,0 +1,50 @@
+[
+  {
+    "title": "The Gentle Giants: Understanding Whale Migration",
+    "excerpt": "Every year, thousands of humpback whales travel thousands of miles to breed in warm waters. We follow their journey.",
+    "image": "https://images.unsplash.com/photo-1568430462989-44163eb1752f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2072&q=80",
+    "category": "Marine Life",
+    "date": "Oct 12, 2024",
+    "author": "Dr. Sarah Chen"
+  },
+  {
+    "title": "Coral Bleaching: A Silent Emergency",
+    "excerpt": "Rising ocean temperatures are causing widespread coral bleaching. What can we do to save these vital ecosystems?",
+    "image": "https://images.unsplash.com/photo-1546026423-cc4642628d2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=987&q=80",
+    "category": "Conservation",
+    "date": "Oct 08, 2024",
+    "author": "James Miller"
+  },
+  {
+    "title": "Bioluminescence: Nature's Light Show",
+    "excerpt": "Deep beneath the waves, creatures create their own light. Discover the science behind this magical phenomenon.",
+    "image": "https://images.unsplash.com/photo-1551244072-5d12893278ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=2232&q=80",
+    "category": "Deep Sea",
+    "date": "Sep 28, 2024",
+    "author": "Elena Rossi"
+  },
+  {
+    "title": "Sea Turtles: Ancient Navigators",
+    "excerpt": "These remarkable creatures have existed for over 100 million years. Learn about their incredible navigation abilities.",
+    "image": "https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "category": "Marine Life",
+    "date": "Sep 15, 2024",
+    "author": "Dr. Sarah Chen"
+  },
+  {
+    "title": "The Great Barrier Reef: A World Wonder",
+    "excerpt": "Exploring the largest coral reef system on Earth and the threats it faces from climate change.",
+    "image": "https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "category": "Expeditions",
+    "date": "Sep 05, 2024",
+    "author": "James Miller"
+  },
+  {
+    "title": "Jellyfish: Drifting Through Time",
+    "excerpt": "These ancient creatures have survived five mass extinctions. What makes them so resilient?",
+    "image": "https://images.unsplash.com/photo-1546500840-ae38253aba9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80",
+    "category": "Deep Sea",
+    "date": "Aug 22, 2024",
+    "author": "Elena Rossi"
+  }
+]

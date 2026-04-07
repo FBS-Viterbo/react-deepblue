@@ -1,12 +1,14 @@
 import { useState } from "react";
 import Header from "./components/Header";
-import Banner from "./components/Banner";
+import Hero from "./components/Hero";
+import ArticleCard from "./components/ArticleCard";
 
 function App() {
   return (
     <>
       <Header />
-      <Banner />
+      <Hero />
+      <ArticleCard />
     </>
   );
 }
