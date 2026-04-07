@@ -31,6 +31,10 @@
   .container {
     @apply mx-auto;
   }
+
+  .wrapper {
+    @apply px-4;
+  }
 }
 
 @layer components {

@@ -13,7 +13,7 @@ const Banner = () => {
           </div>
 
           {/* heading */}
-          <h1 className="text-5xl md:text-7xl">
+          <h1 className="text-5xl md:text-7xl px-5">
             <span className="text-white">Discover the Secrets of the </span>
             <span className="text-primary">Deep</span>
           </h1>
@@ -25,7 +25,7 @@ const Banner = () => {
           </p>
 
           {/* buttons */}
-          <div className="flex flex-col md:flex-row gap-4 items-center">
+          <div className="flex flex-col md:flex-row w-full gap-4 items-center justify-center">
             <button className="btn btn--primary w-full md:w-auto flex items-center justify-center gap-2">
               Start Reading
               <ArrowRight className="w-4 h-4" />
