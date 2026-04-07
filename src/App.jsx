@@ -6,6 +6,7 @@ import ArticleGrid from "./components/ArticleGrid";
 import Conservation from "./components/Conservation";
 import Expedition from "./components/Expedition";
 import About from "./components/About";
+import NewsletterSignup from "./components/NewsLetterSignUp";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Conservation />
         <Expedition />
         <About />
+        <NewsletterSignup />
       </main>
     </>
   );
