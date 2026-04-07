@@ -18,7 +18,7 @@ const Expedition = () => {
             <h2 className="font-serif text-2xl font-bold text-white sm:text-3xl">
               Expeditions
             </h2>
-            <p className="text-sm text-mute">
+            <p className="text-sm text-text-muted">
               Journeys to the most remote corners of the ocean
             </p>
           </div>

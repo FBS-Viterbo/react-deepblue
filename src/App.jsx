@@ -5,6 +5,7 @@ import ArticleCard from "./components/ArticleCard";
 import ArticleGrid from "./components/ArticleGrid";
 import Conservation from "./components/Conservation";
 import Expedition from "./components/Expedition";
+import About from "./components/About";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <ArticleGrid />
         <Conservation />
         <Expedition />
+        <About />
       </main>
     </>
   );
