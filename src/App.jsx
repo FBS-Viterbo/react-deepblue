@@ -7,6 +7,7 @@ import Conservation from "./components/Conservation";
 import Expedition from "./components/Expedition";
 import About from "./components/About";
 import NewsletterSignup from "./components/NewsLetterSignUp";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Expedition />
         <About />
         <NewsletterSignup />
+        <Footer />
       </main>
     </>
   );
