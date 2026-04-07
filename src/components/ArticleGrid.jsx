@@ -10,7 +10,7 @@ const ArticleGrid = () => {
           {/* top title */}
           <div className="flex items-center gap-4">
             {/* left icon circle background - black */}
-            <div className="w-14 h-14 rounded-full bg-black flex items-center justify-center">
+            <div className="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
               <Fish className="w-7 h-7 text-primary" />
             </div>
 

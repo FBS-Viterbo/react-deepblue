@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Search, X, CalendarDays, User } from "lucide-react";
+import { Search, X, CalendarDays, User, Fish } from "lucide-react";
 import articles from "../data/articles.json";
 
 const ArticleCard = () => {
@@ -119,6 +119,32 @@ const ArticleCard = () => {
               ))}
             </div>
           </div>
+
+          {filteredArticles.length === 0 && search.trim() && (
+            <div className="flex flex-col items-center justify-center min-h-75 text-center gap-4">
+              <div className="flex items-center justify-center rounded-full p-3 bg-primary/10">
+                <Fish className="w-7 h-7 text-primary" />
+              </div>
+
+              <h3 className="text-2xl font-heading font-bold text-text-primary">
+                No stories found
+              </h3>
+
+              <p className="max-w-md text-text-muted leading-relaxed">
+                We couldn't find any articles matching "{search}". Try searching
+                for a different title or author, or clear your search to see all
+                stories.
+              </p>
+
+              <button
+                onClick={clearSearch}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-white font-medium hover:bg-primary-dark transition-colors duration-300"
+              >
+                <X className="w-4 h-4" />
+                Clear Search
+              </button>
+            </div>
+          )}
         </div>
       </div>
     </section>
