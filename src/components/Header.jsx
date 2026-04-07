@@ -5,7 +5,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-white relative z-50">
+    <header className="fixed top-0 inset-x-0 z-[100] bg-white/95 backdrop-blur-sm border-b border-slate-200/80">
       <div className="container">
         <div className="wrapper flex items-center justify-between py-4">
           {/* left */}
@@ -53,13 +53,13 @@ const Header = () => {
       {/* overlay below header */}
       <div
         onClick={() => setOpen(false)}
-        className={`fixed top-18 left-0 w-full h-[calc(100%-64px)] bg-black/30 backdrop-blur-sm transition-opacity duration-300 md:hidden
+        className={`fixed top-20 left-0 w-full h-[calc(100vh-5rem)] bg-black/30 backdrop-blur-sm transition-opacity duration-300 md:hidden
         ${open ? "opacity-100 visible" : "opacity-0 invisible"}`}
       />
 
       {/* mobile nav */}
       <div
-        className={`fixed top-[64px] right-0 h-[calc(100%-64px)] w-1/2 bg-white shadow-lg transform transition-transform duration-300 md:hidden z-50
+        className={`fixed top-20 right-0 h-[calc(100vh-5rem)] w-1/2 bg-white shadow-lg transform transition-transform duration-300 md:hidden z-[110]
         ${open ? "translate-x-0" : "translate-x-full"}`}
       >
         <div className="flex flex-col gap-6 p-6">
